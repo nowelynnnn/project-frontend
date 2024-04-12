@@ -1,0 +1,336 @@
+/*-----body----*/
+/*League Spartan FONT to make the font working*/
+@import url('https://fonts.googleapis.com/css?family=League Spartan');
+
+/* Used in all HTML pages */
+/* Used to set the font-family for all elements */
+*{
+    font-family: 'League Spartan';
+}
+
+
+
+/* styling for elements -- Used in login.html */
+#login,
+#click_here,
+#color {
+    color: #d42029;
+}
+
+/* Styling for hyperlinks --- Used in both home.html and profile.html */
+/* a {
+    text-decoration: none;
+    color: black;
+} */
+
+/* Styling for buttons-- Used in home.html */
+#home,
+#profile {
+    background-color: white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 15px;
+}
+
+/* Styling for alternate buttons -- Used in home.html */
+#home1, */
+/* #profile1 { */
+    /* background-color: #df6e6e; Light blue background */
+    /* padding: 8px 10px 8px 10px; Padding */
+    /* border-radius: 15px; Rounded corners */
+/* }
+
+/* Hover effect for buttons in home.html */
+/* #home:hover,
+#profile:hover {
+    background-color: #B7C9D3; 
+    padding: 8px 10px 8px 10px;
+    border-radius: 15px;
+} */
+
+/* Used in all HTML pages */
+.btn3 {
+    border: none; /* No border */
+    background-color:#d42029; /* Dark blue background */
+    color: white; /* White text */
+    width: 60%; /* 60% width */
+    padding-top: 8px; /* Top padding */
+    padding-bottom: 8px; /* Bottom padding */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Styling for specific button in profile.html */
+/* .btn5 {
+    border: none;
+    background-color: #d42029;
+    color: white;
+    width: 30%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+} */
+
+
+/* More button styles for different purposes */
+/* Used in home.html */
+/* .btn6 {
+    border: none;
+    background-color:#d42029;
+    color: white;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+} */
+
+/* Used in home.html */
+/* .btn7 {
+    border: none;
+    background-color: #96c6dc;
+    color: white;
+    width: 60%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+} */
+
+/* Used in home.html */
+/* .btn8:hover {
+    border: none;
+    border-radius: 20px;
+    background-color:#d42029;
+    width: 70px;
+    height: 10px;
+    margin: 5px
+} */
+
+/* Used in home.html */
+/* .btn8 {
+    border: none;
+    border-radius: 20px;
+    background-color: #96c6dc;
+    width: 70px;
+    height: 10px;
+    margin: 5px
+} */
+
+/* Used in home.html */
+/* .btn81 {
+    border: none;
+    border-radius: 20px;
+    background-color:#d42029;
+    width: 70px;
+    height: 10px;
+    margin: 5px
+} */
+
+/* Used in profile.html */
+/* .btn4 {
+    border: none;
+    background-color: #B7C9D3;
+    font-weight: 700;
+    padding: 8px 50px 8px 50px;
+    border-radius: 15px;
+} */
+
+/* Styling for horizontal rule */
+/* Used in all HTML pages */
+/* hr {
+    clear: both;
+    margin-bottom: 0px;
+    border: 0;
+    height: 6px;
+    background-image: linear-gradient(to right, white, transparent, white),
+        linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
+    background-image: -moz-linear-gradient(to right, white, transparent, white),
+        -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
+    background-image: -ms-linear-gradient(to right, white, transparent, white),
+        -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
+} */
+
+/* Styling for input fields and text areas in profile.html */
+/* Used in profile.html */
+/* input {
+    width: 99%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+} */
+
+/* Used in profile.html */
+/* textarea {
+    width: 99%;
+    border: none;
+    border-radius: 15px;
+} */
+
+/*text content profile*/
+/* Used in profile.html */
+/* .text{
+    text-align: justify; /*make text contents of the profile be justified */
+/* } */ 
+
+/* Used in profile.html */
+/* .text-color{
+    color: #015981;
+} */
+
+/* Styling for file input field in profile.html */
+/* #input[type="text"] {
+    width: 99%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+} */
+
+/* Used in profile.html */
+/* #input[type="text"]:hover {
+    width: 99%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+} */
+
+/* Used in profile.html */
+/* textarea:hover {
+    width: 99%;
+    border: none;
+    border-radius: 15px;
+} */
+
+/* Used in profile.html */
+/* input[type="file"] {
+    display: none;
+} */
+
+/* for photo upload button in profile.html */
+/* #photo {
+    border: none;
+    background-color:#d42029;
+    color: white;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+} */
+
+/* Mobile size CSS responsiveness*/
+@media screen and (max-width: 992px) {
+
+    .col-lg-3,
+    .profile,
+    .edit,
+    .blog {
+        display: none !important;
+
+    }
+
+    .toggle-btn,
+    .navbar,
+    .profile1,
+    .edit1,
+    .blog1 {
+        display: block !important;
+    }
+
+    #register {
+        display: none;
+    }
+
+    .col-lg-4.bg-white.rounded-start-5.shadow {
+        display: none !important;
+    }
+
+    .col-lg-4.bg-white.rounded-end-5.shadow {
+        box-shadow: none !important;
+        border-radius: none;
+    }
+
+    .bg-secondary-subtle.edit1 {
+        background-color: white !important;
+
+    }
+
+    .row.mt-3.pt-2 {
+        margin-top: none;
+    }
+
+    .row.mt-5 {
+        margin: 0;
+    }
+}
+
+/* End Mobile CSS */
+
+.form-control {
+    border-radius: 10px;
+}
+
+
+
+/*type writer effects in the log in page and in the registration page */
+.typewriter {
+    overflow: hidden;
+    /* Ensures the text doesn't overflow its container */
+    height: 70%;
+    /* Simulates the cursor */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    margin: 0;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
+
+    /* Ensure relative positioning for absolute positioning of cursor */
+    animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end 4s infinite;
+    /* Animation properties */
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+/* Hide the cursor after animation ends */
+.typewriter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-right: none;
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color:#d42029;
+    }
+}
+
+/*used chevron symbol in the firstpage and secondpage html files*/
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24;
+    background-color: var(--second-color);
+}
+
+

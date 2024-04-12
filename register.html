@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatHome</title>
+    <link rel="icon" type="image/png" href="image/cathomelogo.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-secondary-subtle edit1">
+    <div class="container-fluid">
+      <div class="row mt-4 pt-3 mb-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 bg-danger rounded-start-5 shadow text-center text-white">
+          <br /><br /><br /><br /><br />
+
+         
+          <img src="image/catgroup.png" alt="" width="300" height="200">
+          <h2>"One small cat changes coming home  To an empty house to coming home"</h2> 
+          
+        </div>
+        <div class="col-lg-5 border-start bg-white rounded-end-5 shadow">
+          <div class="text-center">
+            <img
+              id="logo"
+              src="image/cathomelogo.png"
+              alt=""
+              width="150px"
+              height="125px"
+            />
+          </div>
+        
+          <p id="login" class="fw-bold fs-4 text-center">Register</p>
+          <div>
+            <form action="/register" method="post" class="row" >
+
+           
+              <div class=" mb-3 col-6">
+                <label for="fullname">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  required
+                />
+                
+              </div>
+
+              <div class=" mb-3 col-6">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  required
+                />
+                
+              </div>
+             
+            
+              <div class="mb-3 col-6">
+                <label for="birthdate">Birthdate</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="birthdate"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 col-6">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" class="form-control" required>
+                  <option value="#">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option> </select>  
+              </div>
+
+             
+              <div class="mb-3 col-12">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                required
+
+                />  
+              </div>
+              
+              <div class="mb-3 col-12">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                required
+
+                /> 
+              </div>
+
+              <div class="mb-3 col-6">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                    required
+               
+                />
+                
+              </div>
+              <div class=" mb-3 col-6">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                 
+                />
+                
+              </div>
+              <div class="text-center">
+                <button type="submit" class="text-white fw-bold btn3">
+                  Register
+                </button>
+              </div>
+            </form>
+
+            
+            <div class="text-center mt-2">
+              <p>
+                Already have an account?
+                <a id="click_here" href="login.html">Click here.</a>
+              </p>
+            </div>
+            <br />
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
