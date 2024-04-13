@@ -6,7 +6,11 @@
     <title>CatHome</title>
     <link rel="icon" type="image" href="image/cathomelogo.png" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="module" src="assets/js/dashboard/dashboard.js"></script>
+
+    <script type="module" src="assets/js/utils/utils.js"></script>
+
   </head>
   <body>
     
@@ -44,6 +48,10 @@
                   </ul>
                 </li>
               </ul>
+              <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                <span id="user_logged"></span>
+              </div> 
             </div>
           </div>
           <form class="d-flex mt-3" role="search">
@@ -61,171 +69,22 @@
               <li><a class="dropdown-item" href="#">View Profile</a></li>
               <li><a class="dropdown-item" href="#">Settings</a></li>
               <li><a class="dropdown-item" href="#">Help</a></li>
-              <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+              <li>
+                <a class="dropdown-item" href="#" id="btn_logout">Logout</a>
+              </li>
             </ul>
           </li>
+          <div class="row">
+            <!-- Notifications -->
+            <div class="alert alert-success d-none" role="alert"></div>
+            <div class="alert alert-danger d-none" role="alert"></div>
+          </div>
         </div>
-      </nav>
-
-      <!-- CONTENT -->
-      
-
-      
+      </nav>     
     
     <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-
-<!-- <div class="side-menu">
-    <div class="brand-name mt-3">
-        <h1>LINGsCARS</h1>
-    </div>
-    <ul>
-        <li><img src="img/dashboard (1).png" alt="">&nbsp; <span>Dashboard</span></li>
-        <li><img src="img/—Pngtree—vector driver icon_3989858 (1).png" alt="">&nbsp; <span>Drivers</span> </li>
-        <li><img src="img/mobile-taxi-booking.png" alt="">&nbsp; <span>Bookings</span></li>
-        <li><img src="img/card.png" alt="">&nbsp;<span>Payment Details</span> </li>
-        <li><img src="img/transactional.png" alt="">&nbsp; <span>Transactions</span></li>
-        <li><img src="img/report.png" alt="">&nbsp;<span>Car Report</span> </li>
-        <li><img src="img/gear.png" alt="">&nbsp; <span>Settings</span></li>
-    </ul>
-</div>
-
-<div class="container">
-    <div class="header">
-        <div class="nav">
-            <div class="search">
-                <input type="text" placeholder="Search..">
-                <button type="submit"><img src="img/search.png" alt=""></button>
-            </div>
-            <div class="user">
-                <a href="#" class="btn">Add New</a>
-                <img src="img/notification.png" alt="">
-                <div class="img-case nav-item dropdown" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown">
-                    <img src="img/profile.png" alt="">
-                </div>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="cards">
-            <div class="card">
-                <div class="box">
-                    <h1>10</h1>
-                    <h3>Drivers</h3>
-                </div>
-                <div class="icon-case">
-                    <img src="img/—Pngtree—vector driver icon_3989858 (1).png" alt="">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="box">
-                    <h1>5</h1>
-                    <h3>Bookings</h3>
-                </div>
-                <div class="icon-case">
-                    <img src="img/mobile-taxi-booking.png" alt="">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="box">
-                    <h1>20</h1>
-                    <h3>Car Report</h3>
-                </div>
-                <div class="icon-case">
-                    <img src="img/report.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="content-2">
-            <div class="recent-payments">
-                <div class="title">
-                    <h2>Recent Payments</h2>
-                    <a href="#" class="btn">View All</a>
-                </div>
-
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Brand</th>
-                        <th>Amount</th>
-                        <th>Option</th>
-                    </tr>
-
-                    <tr>
-                      <td>Joanie B.</td>
-                      <td>Auto</td>
-                      <td>$105</td>
-                      <td><a href="" class="btn">View</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Jonelyn C.</td>
-                        <td>Honda</td>
-                        <td>$10</td>
-                        <td><a href="" class="btn">View</a></td>
-                      </tr>
-
-                      <tr>
-                        <td>Orlando D.</td>
-                        <td>Ranger</td>
-                        <td>$50</td>
-                        <td><a href="" class="btn">View</a></td>
-                      </tr>
-
-                      <tr>
-                        <td>Czarina A.</td>
-                        <td>Auto</td>
-                        <td>$100</td>
-                        <td><a href="" class="btn">View</a></td>
-                      </tr>
-                </table>
-            </div>
-            <div class="new-model">
-                <div class="title">
-                    <h2>New Model</h2>
-                    <a href="#" class="btn">View All</a>
-                </div>
-
-                <table>
-                    <tr>
-                        <th>Picture</th>
-                        <th>Model</th>
-                        <th>Option</th>
-                    </tr>
-
-                    <tr>
-                        <td><img src="img/sport-car.png" alt=""></td>
-                        <td>Sports Car</td>
-                        <td><img src="img/info.png" alt=""></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="img/sport-car.png" alt=""></td>
-                        <td>Sports Car</td>
-                        <td><img src="img/info.png" alt=""></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="img/sport-car.png" alt=""></td>
-                        <td>Sports Car</td>
-                        <td><img src="img/info.png" alt=""></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 
 

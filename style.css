@@ -17,11 +17,6 @@
     color: #d42029;
 }
 
-/* Styling for hyperlinks --- Used in both home.html and profile.html */
-/* a {
-    text-decoration: none;
-    color: black;
-} */
 
 /* Styling for buttons-- Used in home.html */
 #home,
@@ -31,23 +26,6 @@
     border-radius: 15px;
 }
 
-/* Styling for alternate buttons -- Used in home.html */
-/* #home1, */ 
-/* #profile1 { */
-    /* background-color: #df6e6e; Light blue background */
-    /* padding: 8px 10px 8px 10px; Padding */
-    /* border-radius: 15px; Rounded corners */
-/* }
-
-/* Hover effect for buttons in home.html */
-/* #home:hover,
-#profile:hover {
-    background-color: #B7C9D3; 
-    padding: 8px 10px 8px 10px;
-    border-radius: 15px;
-} */
-
-/* Used in all HTML pages */
 .btn3 {
     border: none; /* No border */
     background-color:#d42029; /* Dark blue background */
@@ -57,162 +35,6 @@
     padding-bottom: 8px; /* Bottom padding */
     border-radius: 15px; /* Rounded corners */
 }
-
-/* Styling for specific button in profile.html */
-/* .btn5 {
-    border: none;
-    background-color: #d42029;
-    color: white;
-    width: 30%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-radius: 15px;
-} */
-
-
-/* More button styles for different purposes */
-/* Used in home.html */
-/* .btn6 {
-    border: none;
-    background-color:#d42029;
-    color: white;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 15px;
-} */
-
-/* Used in home.html */
-/* .btn7 {
-    border: none;
-    background-color: #96c6dc;
-    color: white;
-    width: 60%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 15px;
-} */
-
-/* Used in home.html */
-/* .btn8:hover {
-    border: none;
-    border-radius: 20px;
-    background-color:#d42029;
-    width: 70px;
-    height: 10px;
-    margin: 5px
-} */
-
-/* Used in home.html */
-/* .btn8 {
-    border: none;
-    border-radius: 20px;
-    background-color: #96c6dc;
-    width: 70px;
-    height: 10px;
-    margin: 5px
-} */
-
-/* Used in home.html */
-/* .btn81 {
-    border: none;
-    border-radius: 20px;
-    background-color:#d42029;
-    width: 70px;
-    height: 10px;
-    margin: 5px
-} */
-
-/* Used in profile.html */
-/* .btn4 {
-    border: none;
-    background-color: #B7C9D3;
-    font-weight: 700;
-    padding: 8px 50px 8px 50px;
-    border-radius: 15px;
-} */
-
-/* Styling for horizontal rule */
-/* Used in all HTML pages */
-/* hr {
-    clear: both;
-    margin-bottom: 0px;
-    border: 0;
-    height: 6px;
-    background-image: linear-gradient(to right, white, transparent, white),
-        linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
-    background-image: -moz-linear-gradient(to right, white, transparent, white),
-        -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
-    background-image: -ms-linear-gradient(to right, white, transparent, white),
-        -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.55) 150%);
-} */
-
-/* Styling for input fields and text areas in profile.html */
-/* Used in profile.html */
-/* input {
-    width: 99%;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-} */
-
-/* Used in profile.html */
-/* textarea {
-    width: 99%;
-    border: none;
-    border-radius: 15px;
-} */
-
-/*text content profile*/
-/* Used in profile.html */
-/* .text{
-    text-align: justify; /*make text contents of the profile be justified */
-/* } */ 
-
-/* Used in profile.html */
-/* .text-color{
-    color: #015981;
-} */
-
-/* Styling for file input field in profile.html */
-/* #input[type="text"] {
-    width: 99%;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-} */
-
-/* Used in profile.html */
-/* #input[type="text"]:hover {
-    width: 99%;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-} */
-
-/* Used in profile.html */
-/* textarea:hover {
-    width: 99%;
-    border: none;
-    border-radius: 15px;
-} */
-
-/* Used in profile.html */
-/* input[type="file"] {
-    display: none;
-} */
-
-/* for photo upload button in profile.html */
-/* #photo {
-    border: none;
-    background-color:#d42029;
-    color: white;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 15px;
-    cursor: pointer;
-} */
 
 /* Mobile size CSS responsiveness*/
 @media screen and (max-width: 992px) {
